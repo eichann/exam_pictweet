@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 # Use mysql as the database for Active Record
-gem 'mysql2'
+gem 'mysql2', '~> 0.3.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 # Use Uglifier as compressor for JavaScript assets
@@ -39,6 +39,8 @@ group :development, :test do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
+  gem "rspec-rails", "~> 3.1.0"
+
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring', '1.3.6'
   gem 'pry-rails'
@@ -46,7 +48,7 @@ group :development, :test do
   gem 'sprockets', '2.11.0'
   gem 'kaminari'
   gem 'devise'
+
+  gem 'faker'
+  gem 'factory_girl_rails'
 end
-
-
-
