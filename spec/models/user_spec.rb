@@ -21,4 +21,12 @@ describe User do
       expect(another_user.errors[:email]).to include("has already been taken")
     end
   end
+
+  describe '#count_tweets' do
+    let(:user){ create(:user_with_tweets) }
+    subject { user.count_tweets }
+    it { is_expected.to eq user.tweets.count }
+  end
+
+
 end
